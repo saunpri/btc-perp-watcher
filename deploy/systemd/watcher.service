@@ -1,0 +1,13 @@
+[Unit]
+Description=Watcher BTC market snapshot collector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=watcher
+Group=watcher
+WorkingDirectory=/opt/watcher
+EnvironmentFile=/opt/watcher/.env
+ExecStart=/opt/watcher/.venv/bin/python -m watcher.main
+Nice=10

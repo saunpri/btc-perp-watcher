@@ -1,0 +1,15 @@
+{
+  "symbol_spot": "BTCUSDT",
+  "symbol_perp": "BTCUSDT",
+  "output_dir": "output",
+  "use_binance_usdm": true,
+  "rsi_period": 14,
+  "levels": {
+    "support_primary": 67929,
+    "strength_zone_low": 68295,
+    "strength_zone_high": 68658,
+    "upside_gate": 72641,
+    "upside_gate_2": 74457,
+    "defense_low": 65934
+  }
+}

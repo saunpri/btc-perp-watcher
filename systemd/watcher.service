@@ -1,0 +1,10 @@
+[Unit]
+Description=BTC Watcher collector
+After=network.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/watcher_runtime_clean/watcher_v1
+ExecStart=/root/watcher_runtime_clean/watcher_v1/.venv/bin/python -m watcher.main
+User=root
+
